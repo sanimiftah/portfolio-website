@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- ===== META TAGS ===== -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sani Miftah - Creative Digital Storyteller & Content Strategist</title>
+  <meta name="description" content="Creative digital storyteller with expertise in TV production, digital media campaigns, and content strategy. Experience at Trans TV, KALS Corpora Indonesia, and digital talent management through SM-gnt.">
+  
+  <!-- ===== EXTERNAL STYLESHEETS ===== -->
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link href="assets/css/styles.css" rel="stylesheet">
+  
+  <!-- ===== FONT AWESOME ICONS ===== -->
+  <!-- Primary CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <!-- Fallback CDNs -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.1/css/all.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <!-- ===== CUSTOM STYLES ===== -->
+  <style>
+    /* ===== GLOBAL SMOOTH SCROLLING ===== */
+    html {
+      scroll-behavior: smooth;
+    }
+    
+    /* ===== ICON DISPLAY FIXES ===== */
+    .fas, .fab, .fa {
+      font-family: "Font Awesome 6 Free", "Font Awesome 6 Brands", "FontAwesome" !important;
+      font-weight: 900 !important;
+      display: inline-block !important;
+      font-style: normal !important;
+      font-variant: normal !important;
+      text-rendering: auto !important;
+      line-height: 1 !important;
+    }
+    
+    /* Fallback for missing icons using Unicode symbols */
+    .icon-fallback {
+      font-family: Arial, sans-serif !important;
+      font-size: 1.2em !important;
+    }
+    
+    /* ===== ICON UNICODE FALLBACKS ===== */
+    .fa-pen-fancy:before { content: "\f5ac"; }
+    .fa-pen-fancy.icon-fallback:before { content: "✍"; }
+    
+    .fa-video:before { content: "\f03d"; }
+    .fa-video.icon-fallback:before { content: "📹"; }
+    
+    .fa-bullhorn:before { content: "\f0a1"; }
+    .fa-bullhorn.icon-fallback:before { content: "📢"; }
+    
+    .fa-user-tie:before { content: "\f508"; }
+    .fa-user-tie.icon-fallback:before { content: "👔"; }
+    
+    .fa-shield-alt:before { content: "\f3ed"; }
+    .fa-shield-alt.icon-fallback:before { content: "🛡"; }
+    
+    .fa-cogs:before { content: "\f085"; }
+    .fa-cogs.icon-fallback:before { content: "⚙"; }
+    
+    .fa-lightbulb:before { content: "\f0eb"; }
+    .fa-lightbulb.icon-fallback:before { content: "💡"; }
+    
+    .fa-handshake:before { content: "\f2b5"; }
+    .fa-handshake.icon-fallback:before { content: "🤝"; }
+    
+    .fa-rocket:before { content: "\f135"; }
+    .fa-rocket.icon-fallback:before { content: "🚀"; }
+    
+    .fa-heart:before { content: "\f004"; }
+    .fa-heart.icon-fallback:before { content: "❤"; }
+    
+    .fa-brain:before { content: "\f5dc"; }
+    .fa-brain.icon-fallback:before { content: "🧠"; }
+    
+    .fa-gem:before { content: "\f3a5"; }
+    .fa-gem.icon-fallback:before { content: "💎"; }
+    
+    .fa-star:before { content: "\f005"; }
+    .fa-star.icon-fallback:before { content: "⭐"; }
+    
+    .fa-globe-asia:before { content: "\f57e"; }
+    .fa-globe-asia.icon-fallback:before { content: "🌏"; }
+    
+    .fa-balance-scale:before { content: "\f24e"; }
+    .fa-balance-scale.icon-fallback:before { content: "⚖"; }
+    
+    .fa-users-cog:before { content: "\f509"; }
+    .fa-users-cog.icon-fallback:before { content: "👥"; }
+    
+    .fa-youtube:before { content: "\f167"; }
+    .fa-youtube.icon-fallback:before { content: "▶"; }
+    
+    .fa-github:before { content: "\f09b"; }
+    .fa-github.icon-fallback:before { content: "⚡"; }
+    
+    .fa-linkedin:before { content: "\f08c"; }
+    .fa-linkedin.icon-fallback:before { content: "🔗"; }
+    
+    .fa-envelope:before { content: "\f0e0"; }
+    .fa-envelope.icon-fallback:before { content: "📧"; }
+    
+    .fa-check:before { content: "\f00c"; }
+    .fa-check.icon-fallback:before { content: "✓"; }
+    
+    .fa-chevron-up:before { content: "\f077"; }
+    .fa-chevron-up.icon-fallback:before { content: "↑"; }
+    
+    .fa-bars:before { content: "\f0c9"; }
+    .fa-bars.icon-fallback:before { content: "☰"; }
+    
+    .fa-paper-plane:before { content: "\f1d8"; }
+    .fa-paper-plane.icon-fallback:before { content: "✈"; }
+  </style>
+</head>
+
+<body class="bg-gradient-to-br from-slate-50 to-blue-50 text-gray-900">
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="glass fixed w-full top-0 z-50 border-b border-white border-opacity-20">
+    <!-- Progress Bar -->
+    <div id="progressBar" class="h-1 bg-gradient-to-r from-blue-500 to-cyan-500 transition-all duration-300" style="width: 0%"></div>
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-center items-center h-16">
+        <div class="flex items-center">
+          <span class="text-2xl font-bold text-gradient hover:scale-105 transition-transform cursor-default">
+            Welcome, this is my journey..
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== MAIN CONTENT ===== -->
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="home" class="flex items-center justify-center hero-mega-mendung text-white relative overflow-hidden py-20" style="z-index: 1; position: relative;">
+    <!-- Background Animation -->
+    <div class="absolute inset-0 opacity-30">
+      <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+      </div>
+    </div>
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+      <div class="space-y-8">
+        <!-- Profile Image with Glassmorphism -->
+        <div class="mx-auto w-32 h-32 md:w-40 md:h-40 rounded-full glass-hero p-1 shadow-2xl relative">
+          <div class="w-full h-full rounded-full bg-gradient-to-br from-blue-400 to-cyan-500 flex items-center justify-center">
+            <span class="text-4xl md:text-5xl font-bold text-white">SM</span>
+          </div>
+        </div>
+        
+        <!-- Hero Content -->
+        <div class="space-y-6">
+          <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
+            Hi, I'm <span class="text-cyan-200">Sani Miftah</span>
+          </h1>
+          <h2 class="text-2xl md:text-3xl lg:text-4xl text-gradient font-semibold">
+            Creative Digital Storyteller & Content Strategist
+          </h2>
+          
+          <!-- Hero Description -->
+          <div class="glass-hero p-8 rounded-2xl max-w-4xl mx-auto border border-white border-opacity-30 shadow-2xl relative">
+            <div class="space-y-6 text-center">
+              <p class="text-lg md:text-xl text-blue-100 leading-relaxed">
+                From crafting engaging narratives at <strong class="text-cyan-300">Trans TV</strong> 
+                to developing cultural heritage campaigns like <strong class="text-sky-300">Jelita Indonesia</strong>. 
+                I create meaningful content that connects with audiences and preserves cultural values.
+              </p>
+
+              <div class="bg-gradient-to-r from-blue-600 to-cyan-600 px-6 py-3 rounded-full inline-block shadow-lg">
+                <p class="text-lg text-white font-semibold">
+                  Currently developing <span class="text-orange-300 font-bold">Impact</span> and <span class="text-gradient">CareerSync AI</span> during Vibe Coding Week 2025
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA Buttons -->
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
+          <a href="#impact" class="btn-primary px-8 py-4 rounded-full font-semibold shadow-lg">
+            <i class="fas fa-rocket mr-2"></i>View My Projects
+          </a>
+          <a href="#contact" class="glass border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-blue-600 transition-all duration-300 transform hover:scale-105">
+            <i class="fas fa-envelope mr-2"></i>Get In Touch
+          </a>
+        </div>
+
+        <!-- Social Links -->
+        <div class="flex justify-center space-x-6 pt-8">
+          <a href="https://github.com/sanimiftah" target="_blank" class="btn-primary w-12 h-12 rounded-full flex items-center justify-center text-white hover:scale-110 transition-all duration-300 shadow-lg">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/sani-miftahudin/" target="_blank" class="btn-primary w-12 h-12 rounded-full flex items-center justify-center text-white hover:scale-110 transition-all duration-300 shadow-lg">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="mailto:sanimiftah@outlook.com" class="btn-primary w-12 h-12 rounded-full flex items-center justify-center text-white hover:scale-110 transition-all duration-300 shadow-lg">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TRANSPARENT SPACER ===== -->
+  <section class="h-20 bg-gradient-to-br from-slate-50 to-blue-50 relative z-20" style="background: linear-gradient(to bottom right, #f8fafc, #dbeafe); position: relative;"></section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="about" class="py-20 bg-gradient-to-br from-slate-50 to-blue-50 relative z-20" style="background: linear-gradient(to bottom right, #f8fafc, #dbeafe); position: relative;">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Section Header -->
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold text-gradient mb-4">About Me</h2>
+        <p class="text-xl text-slate-600 max-w-3xl mx-auto">
+          Creative digital storyteller passionate about sharing valuable content through extraordinary ways
+        </p>
+      </div>
+
+      <!-- About Content -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <!-- Left Column - Philosophy & Values -->
+        <div class="space-y-6">
+          <!-- Philosophy Card -->
+          <div class="content-section glass-content p-8 rounded-2xl shadow-lg">
+            <h3 class="text-3xl font-bold text-navy mb-6">My Philosophy</h3>
+            <blockquote class="text-xl text-slate-800 italic leading-relaxed font-medium border-l-4 border-blue-500 pl-6 mb-6">
+              "I'll never be who I wanna be, if I don't move out of my comfort zone"
+            </blockquote>
+            <p class="text-slate-700 text-lg leading-relaxed">
+              This belief drives my continuous learning and passion for challenging myself to the next level in creative storytelling and digital innovation. Every project is an opportunity to push boundaries and create meaningful impact through authentic narratives.
+            </p>
+          </div>
+
+          <!-- Skills Preview -->
+          <div class="space-y-4">
+            <div class="flex items-center glass p-4 rounded-xl relative">
+              <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center mr-4">
+                <i class="fas fa-video text-white text-xl"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold text-navy">Content Creation & Strategy</h4>
+                <p class="text-slate-600">Crafting engaging narratives across multiple platforms</p>
+              </div>
+            </div>
+
+            <div class="flex items-center glass p-4 rounded-xl relative">
+              <div class="w-12 h-12 bg-gradient-to-br from-indigo-500 to-blue-500 rounded-xl flex items-center justify-center mr-4">
+                <i class="fas fa-broadcast-tower text-white text-xl"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold text-navy">TV & Digital Production</h4>
+                <p class="text-slate-600">Professional broadcasting and digital media experience</p>
+              </div>
+            </div>
+
+            <div class="flex items-center glass p-4 rounded-xl relative">
+              <div class="w-12 h-12 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-xl flex items-center justify-center mr-4">
+                <i class="fas fa-user-tie text-white text-xl"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold text-navy">Talent Management</h4>
+                <p class="text-slate-600">Supporting digital creators through SM-gnt platform</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column - Current Focus & Stats -->
+        <div class="space-y-6">
+          <!-- Current Focus Card -->
+          <div class="content-section glass-content p-8 rounded-2xl shadow-lg">
+            <h3 class="text-3xl font-bold text-navy mb-6">Current Focus</h3>
+            <p class="text-slate-800 leading-relaxed mb-6 text-lg">
+              As a Senior Process Executive at Cognizant Malaysia, I specialize in content moderation and policy compliance, 
+              ensuring quality standards across digital platforms while maintaining cultural sensitivity.
+            </p>
+            <p class="text-slate-800 leading-relaxed text-lg">
+              Currently developing innovative solutions through <strong class="text-blue-600">IMPACT</strong> - a comprehensive social impact coordination platform, 
+              and <strong class="text-indigo-600">CareerSync AI</strong> during Cognizant's Vibe Coding Week 2025. These projects focus on leveraging technology 
+              to create meaningful social change and democratize career development opportunities across the Asia-Pacific region.
+            </p>
+          </div>
+
+          <!-- Stats Grid -->
+          <div class="grid grid-cols-2 gap-4">
+            <div class="glass stats-card p-6 rounded-xl text-center hover:scale-105 transition-transform">
+              <div class="text-3xl font-bold text-blue-600 mb-2">5+</div>
+              <div class="text-slate-600 font-medium">Years Experience</div>
+            </div>
+            <div class="glass stats-card p-6 rounded-xl text-center hover:scale-105 transition-transform">
+              <div class="text-3xl font-bold text-indigo-600 mb-2">100+</div>
+              <div class="text-slate-600 font-medium">Content Projects</div>
+            </div>
+            <div class="glass stats-card p-6 rounded-xl text-center hover:scale-105 transition-transform">
+              <div class="text-3xl font-bold text-cyan-600 mb-2">3</div>
+              <div class="text-slate-600 font-medium">Major Companies</div>
+            </div>
+            <div class="glass stats-card p-6 rounded-xl text-center hover:scale-105 transition-transform">
+              <div class="text-3xl font-bold text-blue-600 mb-2">1</div>
+              <div class="text-slate-600 font-medium">Talent Platform</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE & SKILLS SECTION ===== -->
+  <section id="journey" class="py-20 bg-gradient-to-br from-slate-50 to-blue-50 relative z-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Section Header -->
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold text-gradient mb-4">Experience & Skills</h2>
+        <p class="text-xl text-slate-600 max-w-3xl mx-auto">
+          Professional journey and expertise across content creation, media production, and digital innovation
+        </p>
+      </div>
+
+      <!-- ===== PROFESSIONAL TIMELINE ===== -->
+      <div class="mb-20">
+        <div class="relative">
+          <!-- Timeline Line -->
+          <div class="absolute left-1/2 transform -translate-x-1/2 w-1 bg-gradient-to-b from-blue-500 to-cyan-500 h-full hidden lg:block shadow-lg"></div>
+
+          <!-- Timeline Items -->
+          <div class="space-y-12">
+            <!-- Current Role - Cognizant -->
+            <div class="flex flex-col lg:flex-row items-center">
+              <div class="lg:w-1/2 lg:pr-8 mb-8 lg:mb-0">
+                <div class="timeline-card glass bg-gradient-to-br from-navy to-blue-600 text-white p-8 rounded-2xl shadow-2xl border border-white border-opacity-20 hover:scale-105 transition-all duration-300">
+                  <div class="flex items-center mb-4">
+                    <div class="w-12 h-12 bg-cyan-400 rounded-xl flex items-center justify-center mr-4 shadow-lg">
+                      <i class="fas fa-shield-alt text-navy text-xl"></i>
+                    </div>
+                    <div>
+                      <h3 class="text-xl font-bold text-white">Senior Process Executive</h3>
+                      <p class="text-cyan-200 font-semibold">Cognizant Malaysia SDN BHD</p>
+                    </div>
+                  </div>
+                  <p class="text-blue-200 mb-3 font-medium">2022 - Present</p>
+                  <p class="text-blue-100 leading-relaxed">
+                    Leading content moderation excellence for diverse global markets, ensuring platform safety while preserving cultural authenticity. Specialized in cross-cultural policy implementation, I've developed frameworks that balance international compliance standards with local sensitivities.
+                  </p>
+                </div>
+              </div>
+              <div class="hidden lg:block lg:w-1/2"></div>
+            </div>
+
+            <!-- KALS Corpora -->
+            <div class="flex flex-col lg:flex-row-reverse items-center">
+              <div class="lg:w-1/2 lg:pl-8 mb-8 lg:mb-0">
+                <div class="timeline-card glass bg-gradient-to-br from-cyan-500 to-blue-500 text-white p-8 rounded-2xl shadow-2xl border border-white border-opacity-20 hover:scale-105 transition-all duration-300">
+                  <div class="flex items-center mb-4">
+                    <div class="w-12 h-12 bg-blue-400 rounded-xl flex items-center justify-center mr-4 shadow-lg">
+                      <i class="fas fa-palette text-navy text-xl"></i>
+                    </div>
+                    <div>
+                      <h3 class="text-xl font-bold text-white">Creative Digital Media & Communications</h3>
+                      <p class="text-blue-200 font-semibold">KALS Corpora Indonesia</p>
+                    </div>
+                  </div>
+                  <p class="text-cyan-200 mb-3 font-medium">2019 - 2022</p>
+                  <p class="text-cyan-100 leading-relaxed">
+                    Spearheaded groundbreaking cultural preservation campaigns, most notably the viral "Jelita Indonesia" series that reached 5M+ viewers across Southeast Asia. Beyond creative direction, I strategically managed online advertising campaigns and comprehensive communications processes, optimizing content distribution across multiple digital platforms. Collaborated with prestigious cultural institutions including Saung Angklung Udjo and high-profile talents like Zaskia Adya Mecca.
+                  </p>
+                </div>
+              </div>
+              <div class="hidden lg:block lg:w-1/2"></div>
+            </div>
+
+            <!-- Trans TV -->
+            <div class="flex flex-col lg:flex-row items-center">
+              <div class="lg:w-1/2 lg:pr-8 mb-8 lg:mb-0">
+                <div class="timeline-card glass bg-gradient-to-br from-indigo-600 to-blue-700 text-white p-8 rounded-2xl shadow-2xl border border-white border-opacity-20 hover:scale-105 transition-all duration-300">
+                  <div class="flex items-center mb-4">
+                    <div class="w-12 h-12 bg-indigo-400 rounded-xl flex items-center justify-center mr-4 shadow-lg">
+                      <i class="fas fa-tv text-navy text-xl"></i>
+                    </div>
+                    <div>
+                      <h3 class="text-xl font-bold text-white">Creative TV Production</h3>
+                      <p class="text-indigo-200 font-semibold">Trans TV - Berita Islami Masa Kini</p>
+                    </div>
+                  </div>
+                  <p class="text-blue-200 mb-3 font-medium">2017 - 2018</p>
+                  <p class="text-blue-100 leading-relaxed">
+                    Launched my professional media career at Indonesia's leading television network, contributing to "Berita Islami Masa Kini" - a flagship program reaching millions of viewers nationwide. Mastered the fundamentals of broadcast journalism, from compelling scriptwriting to data-driven audience analysis using RSCC metrics. This foundational experience in live television production taught me the critical importance of deadline-driven creativity and authentic storytelling under pressure.
+                  </p>
+                </div>
+              </div>
+              <div class="hidden lg:block lg:w-1/2"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== SKILLS & EXPERTISE ===== -->
+      <div class="mt-20">
+        <!-- Skills Header -->
+        <div class="text-center mb-12">
+          <h3 class="text-3xl md:text-4xl font-bold text-gradient mb-4">Skills & Expertise</h3>
+          <p class="text-lg text-slate-600 max-w-2xl mx-auto">
+            Technical skills and competencies across content creation, media production, and digital innovation
+          </p>
+        </div>
+
+        <!-- Skills Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Content Creation & Strategy -->
+          <div class="glass skills-card p-6 rounded-2xl shadow-lg border border-white border-opacity-20 hover:scale-105 transition-all duration-300">
+            <div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-4 shadow-lg">
+              <span class="text-2xl">✍</span>
+            </div>
+            <h3 class="text-lg font-bold text-navy mb-3">Content Creation</h3>
+            <ul class="space-y-2 text-slate-700 text-sm">
+              <li class="flex items-center">
+                <span class="text-blue-500 mr-2 text-xs">✓</span>
+                <span>Script Writing & Storytelling</span>
+              </li>
+              <li class="flex items-center">
+                <span class="text-blue-500 mr-2 text-xs">✓</span>
+                <span>Content Strategy</span>
+              </li>
+              <li class="flex items-center">
+                <span class="text-blue-500 mr-2 text-xs">✓</span>
+                <span>Cultural Content Development</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Media Production -->
+          <div class="glass skills-card p-6 rounded-2xl shadow-lg border border-white border-opacity-20 hover:scale-105 transition-all duration-300">
+            <div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-4 shadow-lg">
+              <span class="text-2xl">📹</span>
+            </div>
+            <h3 class="text-lg font-bold text-navy mb-3">Media Production</h3>
+            <ul class="space-y-2 text-slate-700 text-sm">
+              <li class="flex items-center">
+                <span class="text-indigo-500 mr-2 text-xs">✓</span>
+                <span>TV Production & Broadcasting</span>
+              </li>
+              <li class="flex items-center">
+                <span class="text-indigo-500 mr-2 text-xs">✓</span>
+                <span>Digital Campaign Development</span>
+              </li>
+              <li class="flex items-center">
+                <span class="text-indigo-500 mr-2 text-xs">✓</span>
+                <span>Creative Direction</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Digital Marketing -->
+          <div class="glass skills-card p-6 rounded-2xl shadow-lg border border-white border-opacity-20 hover:scale-105 transition-all duration-300">
+            <div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-4 shadow-lg">
+              <span class="text-2xl">📢</span>
+            </div>
+            <h3 class="text-lg font-bold text-navy mb-3">Digital Marketing</h3>
+            <ul class="space-y-2 text-slate-700 text-sm">
+              <li class="flex items-center">
+                <span class="text-cyan-500 mr-2 text-xs">✓</span>
+                <span>Multi-platform Campaigns</span>
+              </li>
+              <li class="flex items-center">
+                <span class="text-cyan-500 mr-2 text-xs">✓</span>
+                <span>Audience Analysis</span>
+              </li>
+              <li class="flex items-center">
+                <span class="text-cyan-500 mr-2 text-xs">✓</span>
+                <span>Brand Collaboration</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Talent Management -->
+          <div class="glass skills-card p-6 rounded-2xl shadow-lg border border-white border-opacity-20 hover:scale-105 transition-all duration-300">
+            <div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-4 shadow-lg">
+              <span class="text-2xl">👔</span>
+            </div>
+            <h3 class="text-lg font-bold text-navy mb-3">Talent Management</h3>
+            <ul class="space-y-2 text-slate-700 text-sm">
+              <li class="flex items-center">
+                <span class="text-blue-600 mr-2 text-xs">✓</span>
+                <span>Digital Creator Support</span>
+              </li>
+              <li class="flex items-center">
+                <span class="text-blue-600 mr-2 text-xs">✓</span>
+                <span>Talent Development</span>
+              </li>
+              <li class="flex items-center">
+                <span class="text-blue-600 mr-2 text-xs">✓</span>
+                <span>Creative Consulting</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Quality Assurance -->
+          <div class="glass skills-card p-6 rounded-2xl shadow-lg border border-white border-opacity-20 hover:scale-105 transition-all duration-300">
+            <div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-4 shadow-lg">
+              <span class="text-2xl">🛡</span>
+            </div>
+            <h3 class="text-lg font-bold text-navy mb-3">Quality Assurance</h3>
+            <ul class="space-y-2 text-slate-700 text-sm">
+              <li class="flex items-center">
+                <span class="text-navy mr-2 text-xs">✓</span>
+                <span>Content Moderation</span>
+              </li>
+              <li class="flex items-center">
+                <span class="text-navy mr-2 text-xs">✓</span>
+                <span>Policy Compliance</span>
+              </li>
+              <li class="flex items-center">
+                <span class="text-navy mr-2 text-xs">✓</span>
+                <span>Cultural Sensitivity</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Technical Skills -->
+          <div class="glass skills-card p-6 rounded-2xl shadow-lg border border-white border-opacity-20 hover:scale-105 transition-all duration-300">
+            <div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-4 shadow-lg">
+              <span class="text-2xl">⚙</span>
+            </div>
+            <h3 class="text-lg font-bold text-navy mb-3">Technical Skills</h3>
+            <ul class="space-y-2 text-slate-700 text-sm">
+              <li class="flex items-center">
+                <span class="text-sky-500 mr-2 text-xs">✓</span>
+                <span>Data Analysis (RSCC)</span>
+              </li>
+              <li class="flex items-center">
+                <span class="text-sky-500 mr-2 text-xs">✓</span>
+                <span>Platform Management</span>
+              </li>
+              <li class="flex items-center">
+                <span class="text-sky-500 mr-2 text-xs">✓</span>
+                <span>Web Development</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Core Competencies -->
+        <div class="mt-12">
+          <div class="glass p-8 rounded-2xl shadow-lg border border-white border-opacity-20">
+            <h3 class="text-xl font-bold text-navy mb-6 text-center">Core Competencies</h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+              <div class="text-center group competency-card">
+                <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mx-auto mb-3 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                  <span class="text-3xl">💡</span>
+                </div>
+                <h4 class="font-semibold text-navy text-sm">Creativity</h4>
+              </div>
+              <div class="text-center group competency-card">
+                <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mx-auto mb-3 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                  <span class="text-3xl">🤝</span>
+                </div>
+                <h4 class="font-semibold text-navy text-sm">Collaboration</h4>
+              </div>
+              <div class="text-center group competency-card">
+                <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mx-auto mb-3 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                  <span class="text-3xl">🚀</span>
+                </div>
+                <h4 class="font-semibold text-navy text-sm">Adaptability</h4>
+              </div>
+              <div class="text-center group competency-card">
+                <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mx-auto mb-3 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                  <span class="text-3xl">❤</span>
+                </div>
+                <h4 class="font-semibold text-navy text-sm">Passion</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== IMPACT PROJECTS SECTION ===== -->
+  <section id="impact" class="py-20 bg-gradient-to-br from-blue-50 to-slate-50 relative z-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Section Header -->
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold text-gradient mb-4">Impact Projects</h2>
+        <p class="text-xl text-slate-600 max-w-3xl mx-auto">
+          Projects that create meaningful social change and preserve cultural values for future generations
+        </p>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <!-- Project 1: IMPACT Platform -->
+        <div class="glass project-card p-8 rounded-2xl shadow-2xl border border-white border-opacity-20 hover:scale-105 transition-all duration-300">
+          <div class="flex items-center mb-6">
+            <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-500 rounded-2xl flex items-center justify-center mr-4 shadow-lg">
+              <i class="fas fa-code-branch text-white text-2xl"></i>
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold text-navy">IMPACT</h3>
+              <p class="text-blue-600 font-semibold">Social Impact Coordination Platform</p>
+            </div>
+          </div>
+          
+          <p class="text-slate-700 mb-6 leading-relaxed">
+            IMPACT is a comprehensive digital platform designed to unify and amplify social impact efforts across the Asia-Pacific region. Originally developed during Cognizant Vibe Coding Week, this platform transforms scattered volunteer efforts into a cohesive ecosystem of change by centralizing opportunities, facilitating intelligent skill matching, enabling team collaboration, and providing comprehensive impact tracking and analytics.
+          </p>
+
+          <div class="space-y-4 mb-6">
+            <div class="glass p-4 rounded-xl border border-white border-opacity-10">
+              <div class="flex items-center mb-2">
+                <i class="fas fa-robot text-blue-500 mr-3"></i>
+                <span class="font-semibold text-navy">Modern Development Stack</span>
+              </div>
+              <p class="text-slate-600">Built with cutting-edge technologies and best practices</p>
+            </div>
+            <div class="glass p-4 rounded-xl border border-white border-opacity-10">
+              <div class="flex items-center mb-2">
+                <i class="fas fa-mobile-alt text-indigo-500 mr-3"></i>
+                <span class="font-semibold text-navy">Responsive Design</span>
+              </div>
+              <p class="text-slate-600">Optimized for all devices with elegant user interface</p>
+            </div>
+            <div class="glass p-4 rounded-xl border border-white border-opacity-10">
+              <div class="flex items-center mb-2">
+                <i class="fas fa-palette text-cyan-500 mr-3"></i>
+                <span class="font-semibold text-navy">Project Management</span>
+              </div>
+              <p class="text-slate-600">Comprehensive tools for team collaboration and workflow optimization</p>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap gap-2 mb-6">
+            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Open Source</span>
+            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Modern Web Dev</span>
+            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Team Collaboration</span>
+          </div>
+
+          <div class="flex flex-col sm:flex-row gap-3">
+            <a href="https://sanimiftah.github.io/impact/" target="_blank" 
+               class="flex-1 btn-primary project-button px-6 py-3 rounded-xl font-semibold text-center shadow-lg">
+              <i class="fas fa-external-link-alt mr-2"></i>Live Demo
+            </a>
+            <a href="https://github.com/sanimiftah/impact" target="_blank" 
+               class="flex-1 glass project-button border-2 border-blue-600 text-blue-600 px-6 py-3 rounded-xl font-semibold text-center hover:bg-blue-600 hover:text-white transition-all duration-300">
+              <i class="fab fa-github mr-2"></i>View Code
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 2: Cultural Heritage Preservation -->
+        <div class="glass project-card p-8 rounded-2xl shadow-2xl border border-white border-opacity-20 hover:scale-105 transition-all duration-300">
+          <div class="flex items-center mb-6">
+            <div class="w-16 h-16 bg-gradient-to-br from-indigo-500 to-blue-500 rounded-2xl flex items-center justify-center mr-4 shadow-lg">
+              <i class="fas fa-landmark text-white text-2xl"></i>
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold text-navy">Cultural Heritage Preservation</h3>
+              <p class="text-cyan-600 font-semibold">Digital Storytelling for Cultural Conservation</p>
+            </div>
+          </div>
+          
+          <p class="text-slate-700 mb-6 leading-relaxed">
+            Through projects like Jelita Indonesia, I've dedicated my career to preserving Indonesia's rich cultural heritage 
+            using modern digital storytelling techniques. These campaigns have reached millions, raising awareness about 
+            traditional arts, crafts, and cultural practices that risk being forgotten.
+          </p>
+
+          <div class="space-y-4 mb-6">
+            <div class="glass p-4 rounded-xl border border-white border-opacity-10">
+              <div class="flex items-center mb-2">
+                <i class="fas fa-globe text-cyan-500 mr-3"></i>
+                <span class="font-semibold text-navy">Global Reach</span>
+              </div>
+              <p class="text-slate-600">Cultural campaigns viewed by millions across Southeast Asia</p>
+            </div>
+            <div class="glass p-4 rounded-xl border border-white border-opacity-10">
+              <div class="flex items-center mb-2">
+                <i class="fas fa-handshake text-blue-500 mr-3"></i>
+                <span class="font-semibold text-navy">Cultural Partnerships</span>
+              </div>
+              <p class="text-slate-600">Collaborated with Saung Angklung Udjo and traditional art institutions</p>
+            </div>
+            <div class="glass p-4 rounded-xl border border-white border-opacity-10">
+              <div class="flex items-center mb-2">
+                <i class="fas fa-award text-indigo-500 mr-3"></i>
+                <span class="font-semibold text-navy">Recognition</span>
+              </div>
+              <p class="text-slate-600">Featured campaigns that blend tradition with modern storytelling</p>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap gap-2 mb-6">
+            <span class="px-3 py-1 bg-cyan-100 text-cyan-800 rounded-full text-sm">Cultural Preservation</span>
+            <span class="px-3 py-1 bg-cyan-100 text-cyan-800 rounded-full text-sm">Digital Storytelling</span>
+            <span class="px-3 py-1 bg-cyan-100 text-cyan-800 rounded-full text-sm">Community Impact</span>
+          </div>
+
+          <div class="flex flex-col sm:flex-row gap-3">
+            <a href="https://youtu.be/qR0mK_97U4Q?si=ZXHW92zsyqN2M1fs" target="_blank" 
+               class="flex-1 bg-gradient-to-r from-red-500 to-red-600 text-white project-button px-6 py-3 rounded-xl font-semibold text-center hover:from-red-600 hover:to-red-700 transition-all duration-300 shadow-lg">
+              <i class="fab fa-youtube mr-2"></i>Jelita Indonesia
+            </a>
+            <a href="https://youtu.be/Th3liDupxOc?si=7GPY-H4dRE3ebnJ9" target="_blank" 
+               class="flex-1 bg-gradient-to-r from-red-500 to-red-600 text-white project-button px-6 py-3 rounded-xl font-semibold text-center hover:from-red-600 hover:to-red-700 transition-all duration-300 shadow-lg">
+              <i class="fab fa-youtube mr-2"></i>Saung Angklung Udjo
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 3: Career Development & Education -->
+        <div class="glass project-card p-8 rounded-2xl shadow-2xl border border-white border-opacity-20 hover:scale-105 transition-all duration-300">
+          <div class="flex items-center mb-6">
+            <div class="w-16 h-16 bg-gradient-to-br from-indigo-600 to-blue-600 rounded-2xl flex items-center justify-center mr-4 shadow-lg">
+              <i class="fas fa-graduation-cap text-white text-2xl"></i>
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold text-navy">Career Development & Education</h3>
+              <p class="text-indigo-600 font-semibold">Empowering Career Growth Through Technology</p>
+            </div>
+          </div>
+          
+          <p class="text-slate-700 mb-6 leading-relaxed">
+            CareerSync AI represents my commitment to democratizing career development through technology. 
+            This platform bridges the gap between education and employment, helping individuals discover 
+            their potential and connect with meaningful career opportunities.
+          </p>
+
+          <div class="space-y-4 mb-6">
+            <div class="glass p-4 rounded-xl border border-white border-opacity-10">
+              <div class="flex items-center mb-2">
+                <i class="fas fa-users text-indigo-500 mr-3"></i>
+                <span class="font-semibold text-navy">Target Impact</span>
+              </div>
+              <p class="text-slate-600">Connecting thousands of job seekers with suitable career paths</p>
+            </div>
+            <div class="glass p-4 rounded-xl border border-white border-opacity-10">
+              <div class="flex items-center mb-2">
+                <i class="fas fa-brain text-blue-500 mr-3"></i>
+                <span class="font-semibold text-navy">AI-Powered Matching</span>
+              </div>
+              <p class="text-slate-600">Intelligent algorithms for personalized career recommendations</p>
+            </div>
+            <div class="glass p-4 rounded-xl border border-white border-opacity-10">
+              <div class="flex items-center mb-2">
+                <i class="fas fa-rocket text-cyan-500 mr-3"></i>
+                <span class="font-semibold text-navy">Skills Development</span>
+              </div>
+              <p class="text-slate-600">Comprehensive tracking and development of professional skills</p>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap gap-2 mb-6">
+            <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm">Education Technology</span>
+            <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm">Career Guidance</span>
+            <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm">AI Innovation</span>
+          </div>
+
+          <div class="flex flex-col sm:flex-row gap-3">
+            <a href="https://sanimiftah.github.io/careersync-ai/" target="_blank" 
+               class="flex-1 btn-primary project-button px-6 py-3 rounded-xl font-semibold text-center shadow-lg">
+              <i class="fas fa-external-link-alt mr-2"></i>Live Demo
+            </a>
+            <a href="https://github.com/sanimiftah/careersync-ai" target="_blank" 
+               class="flex-1 glass project-button border-2 border-indigo-600 text-indigo-600 px-6 py-3 rounded-xl font-semibold text-center hover:bg-indigo-600 hover:text-white transition-all duration-300">
+              <i class="fab fa-github mr-2"></i>View Code
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 4: Digital Creator Empowerment -->
+        <div class="glass project-card p-8 rounded-2xl shadow-2xl border border-white border-opacity-20 hover:scale-105 transition-all duration-300">
+          <div class="flex items-center mb-6">
+            <div class="w-16 h-16 bg-gradient-to-br from-indigo-500 to-blue-500 rounded-2xl flex items-center justify-center mr-4 shadow-lg">
+              <i class="fas fa-star text-white text-2xl"></i>
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold text-navy">Digital Creator Empowerment</h3>
+              <p class="text-indigo-600 font-semibold">Supporting Genuine Talent in Digital Space</p>
+            </div>
+          </div>
+          
+          <p class="text-slate-700 mb-6 leading-relaxed">
+            SM-gnt platform embodies the "Semangat" (fighting spirit) by providing comprehensive support 
+            to digital creators. This initiative helps talented individuals navigate the digital landscape, 
+            develop their skills, and build sustainable creative careers.
+          </p>
+
+          <div class="space-y-4 mb-6">
+            <div class="glass p-4 rounded-xl border border-white border-opacity-10">
+              <div class="flex items-center mb-2">
+                <i class="fas fa-heart text-indigo-500 mr-3"></i>
+                <span class="font-semibold text-navy">Creator Support</span>
+              </div>
+              <p class="text-slate-600">Mentoring and guiding emerging digital content creators</p>
+            </div>
+            <div class="glass p-4 rounded-xl border border-white border-opacity-10">
+              <div class="flex items-center mb-2">
+                <i class="fas fa-network-wired text-blue-500 mr-3"></i>
+                <span class="font-semibold text-navy">Network Building</span>
+              </div>
+              <p class="text-slate-600">Connecting creators with brands and collaboration opportunities</p>
+            </div>
+            <div class="glass p-4 rounded-xl border border-white border-opacity-10">
+              <div class="flex items-center mb-2">
+                <i class="fas fa-chart-line text-cyan-500 mr-3"></i>
+                <span class="font-semibold text-navy">Growth Strategy</span>
+              </div>
+              <p class="text-slate-600">Strategic planning for sustainable creative business development</p>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Talent Development</span>
+            <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm">Creator Economy</span>
+            <span class="px-3 py-1 bg-cyan-100 text-cyan-800 rounded-full text-sm">Community Building</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact" class="py-20 hero-mega-mendung text-white relative z-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Section Header -->
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold mb-4">Let's Connect</h2>
+        <p class="text-xl text-blue-100 max-w-3xl mx-auto">
+          Ready to collaborate on innovative projects that make a difference? Let's build something amazing together!
+        </p>
+      </div>
+
+      <!-- Contact Content -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <!-- Left Column - Contact Info -->
+        <div class="space-y-8">
+          <div>
+            <h3 class="text-2xl md:text-3xl font-bold mb-6">Get In Touch</h3>
+            <p class="text-lg text-blue-100 leading-relaxed mb-6">
+              I'm always excited to discuss new opportunities, innovative projects, and ways to leverage technology for positive social impact. 
+              Whether you're looking for a collaborator, want to learn more about my work, or have an exciting project in mind, I'd love to hear from you!
+            </p>
+          </div>
+
+          <!-- Contact Methods -->
+          <div class="space-y-4">
+            <div class="flex items-center glass contact-method-card p-4 rounded-xl">
+              <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center mr-4 shadow-lg">
+                <i class="fas fa-envelope text-white text-xl"></i>
+              </div>
+              <div>
+                <p class="text-cyan-200 font-semibold">Email</p>
+                <p class="text-blue-100">sanimiftah@outlook.com</p>
+              </div>
+            </div>
+
+            <div class="flex items-center glass contact-method-card p-4 rounded-xl">
+              <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center mr-4 shadow-lg">
+                <i class="fab fa-github text-white text-xl"></i>
+              </div>
+              <div>
+                <p class="text-cyan-200 font-semibold">GitHub</p>
+                <p class="text-blue-100">github.com/sanimiftah</p>
+              </div>
+            </div>
+
+            <div class="flex items-center glass contact-method-card p-4 rounded-xl">
+              <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center mr-4 shadow-lg">
+                <i class="fab fa-linkedin text-white text-xl"></i>
+              </div>
+              <div>
+                <p class="text-cyan-200 font-semibold">LinkedIn</p>
+                <a href="https://www.linkedin.com/in/sani-miftahudin/" target="_blank" class="text-blue-100 hover:text-cyan-200 transition-colors duration-300">linkedin.com/in/sani-miftahudin</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column - Contact Form -->
+        <div class="glass contact-form p-8 rounded-2xl shadow-2xl border border-white border-opacity-20">
+          <h3 class="text-2xl font-bold mb-6 text-white">Send a Message</h3>
+          <form class="space-y-6">
+            <div>
+              <label for="name" class="block text-sm font-medium text-blue-100 mb-2">Name</label>
+              <input type="text" id="name" name="name" 
+                     class="w-full px-4 py-3 glass border border-white border-opacity-30 rounded-xl text-slate-800 placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:border-transparent" 
+                     placeholder="Your Name">
+            </div>
+
+            <div>
+              <label for="email" class="block text-sm font-medium text-blue-100 mb-2">Email</label>
+              <input type="email" id="email" name="email" 
+                     class="w-full px-4 py-3 glass border border-white border-opacity-30 rounded-xl text-slate-800 placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:border-transparent" 
+                     placeholder="your.email@example.com">
+            </div>
+
+            <div>
+              <label for="message" class="block text-sm font-medium text-blue-100 mb-2">Message</label>
+              <textarea id="message" name="message" rows="4" 
+                        class="w-full px-4 py-3 glass border border-white border-opacity-30 rounded-xl text-slate-800 placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:border-transparent resize-none" 
+                        placeholder="Tell me about your project or idea..."></textarea>
+            </div>
+
+            <button type="submit" 
+                    class="w-full btn-primary project-button px-6 py-3 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg">
+              <i class="fas fa-paper-plane mr-2"></i>Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="glass border-t border-white border-opacity-20 py-12 relative z-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <!-- Footer Brand -->
+        <h3 class="text-2xl font-bold mb-4 text-navy">Sani Miftah</h3>
+        <p class="text-slate-600 mb-4">
+          Creative Digital Storyteller committed to preserving cultural heritage through innovative content strategies and digital media excellence.
+        </p>
+        <p class="text-slate-500 text-sm mb-6">
+          Featured projects: IMPACT Social Platform, CareerSync AI (Vibe Coding Week 2025), Jelita Indonesia Cultural Campaign & SM-gnt Digital Talent Platform
+        </p>
+        
+        <!-- Social Links -->
+        <div class="flex justify-center space-x-6 mb-8">
+          <a href="https://github.com/sanimiftah" target="_blank" class="w-12 h-12 glass rounded-full flex items-center justify-center text-slate-600 hover:text-blue-600 transition-all duration-300 hover:scale-110 shadow-lg">
+            <i class="fab fa-github text-xl"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/sani-miftahudin/" target="_blank" class="w-12 h-12 glass rounded-full flex items-center justify-center text-slate-600 hover:text-blue-600 transition-all duration-300 hover:scale-110 shadow-lg">
+            <i class="fab fa-linkedin text-xl"></i>
+          </a>
+          <a href="mailto:sanimiftah@outlook.com" class="w-12 h-12 glass rounded-full flex items-center justify-center text-slate-600 hover:text-blue-600 transition-all duration-300 hover:scale-110 shadow-lg">
+            <i class="fas fa-envelope text-xl"></i>
+          </a>
+          <a href="https://smgnt.my.canva.site/sanimiftah" target="_blank" class="w-12 h-12 glass rounded-full flex items-center justify-center text-slate-600 hover:text-blue-600 transition-all duration-300 hover:scale-110 shadow-lg">
+            <i class="fas fa-palette text-xl"></i>
+          </a>
+        </div>
+        
+        <!-- Copyright -->
+        <div class="border-t border-white border-opacity-20 pt-8">
+          <p class="text-slate-500">&copy; 2025 Sani Miftah. All rights reserved. Built with passion for technology and social impact.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== BACK TO TOP BUTTON ===== -->
+  <button id="backToTop" class="fixed bottom-6 right-6 glass border border-white border-opacity-20 text-slate-600 hover:text-blue-600 p-3 rounded-full shadow-lg transition-all duration-300 transform hover:scale-110 opacity-0 pointer-events-none z-50">
+    <i class="fas fa-chevron-up text-xl"></i>
+  </button>
+
+  <!-- ===== JAVASCRIPT ===== -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>

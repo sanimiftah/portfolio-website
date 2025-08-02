@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Icon Test</title>
+    <!-- FontAwesome 6.5.1 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- FontAwesome 4.7.0 Fallback -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            line-height: 2;
+        }
+        .test-icon {
+            margin: 10px;
+            padding: 10px;
+            background: #f0f0f0;
+            border: 1px solid #ddd;
+            display: inline-block;
+        }
+        .emoji-fallback {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Icon Test Page</h1>
+    
+    <h2>FontAwesome 6 Icons (should show icons):</h2>
+    <div class="test-icon">
+        <i class="fas fa-pen-fancy"></i> fa-pen-fancy
+    </div>
+    <div class="test-icon">
+        <i class="fas fa-video"></i> fa-video
+    </div>
+    <div class="test-icon">
+        <i class="fas fa-bullhorn"></i> fa-bullhorn
+    </div>
+    <div class="test-icon">
+        <i class="fas fa-shield-alt"></i> fa-shield-alt
+    </div>
+    <div class="test-icon">
+        <i class="fas fa-cogs"></i> fa-cogs
+    </div>
+    
+    <h2>FontAwesome 4 Icons (fallback):</h2>
+    <div class="test-icon">
+        <i class="fa fa-video"></i> fa-video
+    </div>
+    <div class="test-icon">
+        <i class="fa fa-bullhorn"></i> fa-bullhorn
+    </div>
+    <div class="test-icon">
+        <i class="fa fa-shield"></i> fa-shield
+    </div>
+    <div class="test-icon">
+        <i class="fa fa-cogs"></i> fa-cogs
+    </div>
+    <div class="test-icon">
+        <i class="fa fa-heart"></i> fa-heart
+    </div>
+    
+    <h2>Emoji Fallbacks (always work):</h2>
+    <div class="test-icon emoji-fallback">
+        ✍ Content Creation
+    </div>
+    <div class="test-icon emoji-fallback">
+        📹 Media Production
+    </div>
+    <div class="test-icon emoji-fallback">
+        📢 Digital Marketing
+    </div>
+    <div class="test-icon emoji-fallback">
+        🛡 Quality Assurance
+    </div>
+    <div class="test-icon emoji-fallback">
+        ⚙ Technical Skills
+    </div>
+    
+    <script>
+        // Check if FontAwesome loaded
+        window.onload = function() {
+            const testIcon = document.createElement('i');
+            testIcon.className = 'fas fa-home';
+            testIcon.style.position = 'absolute';
+            testIcon.style.left = '-9999px';
+            document.body.appendChild(testIcon);
+            
+            const computedStyle = window.getComputedStyle(testIcon, ':before');
+            const content = computedStyle.getPropertyValue('content');
+            
+            document.body.removeChild(testIcon);
+            
+            const result = document.createElement('div');
+            result.style.cssText = 'background: yellow; padding: 10px; margin: 20px 0; border: 2px solid red;';
+            
+            if (content && content !== 'none' && content !== '') {
+                result.innerHTML = '<strong>✅ FontAwesome loaded successfully!</strong>';
+            } else {
+                result.innerHTML = '<strong>❌ FontAwesome failed to load. Using emoji fallbacks.</strong>';
+            }
+            
+            document.body.insertBefore(result, document.body.firstChild);
+        };
+    </script>
+</body>
+</html>
